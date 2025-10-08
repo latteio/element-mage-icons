@@ -1,0 +1,10 @@
+@use "@/styles/MagIconDialog.module.scss";
+
+:root {
+  --mag-component-border-color: var(--el-border-color-light);
+  --mag-body-base-padding: 6px;
+  --mag-view-base-padding: 8px;
+  --mag-view-header-text-size: 18px;
+  --mag-view-header-text-weight: 400;
+  --mag-view-header-text-color: #606266;
+}
