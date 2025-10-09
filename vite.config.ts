@@ -68,7 +68,7 @@ export default defineConfig(({mode}) => {
     /* 服务代理 */
     server: {
       host: '0.0.0.0',
-      port: 8000,
+      port: 8001,
       cors: true,
       hmr: true,
       proxy: {
