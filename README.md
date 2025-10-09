@@ -1,7 +1,6 @@
-# 基于Vu3+ElementPlus+TSX组件封装
-目标: 精致, 精炼, 贴近原生; 封装不变, 扩展易变的, 尽量不改变用户习惯.
-使用纯tsx模式封装组件.
-尽量不用或少用第三方插件, 而只使用vue3+ElementPlus的特性完成组件编制.
+# element-mage-icons
+Based on Vu3 ElementPlus TSX component encapsulationGoal:
+Refined, concise, close to native; keep encapsulation unchanged, allow easy extension, try not to change user habits.
 
 ## Project Setup
 
@@ -26,15 +25,15 @@ npm run build
 ```sh
 npm run lint
 ```
-### 组件打包命令(npm pack将组件打包成tgz格式)
+### Component packaging command (pack the component into tgz format)
 ```sh
 npm run build
 npm pack
 ```
 
-### 组件打包配置
+### Component packaging configuration
 
-package.json中配置：
+Configuration in package.json: 
 ```json
 "main": "dist/index.umd.js",
 "module": "dist/index.es.js",
@@ -52,7 +51,7 @@ package.json中配置：
 }
 ```
 
-vite.config.ts中配置:
+Configuration in vite.config.ts:
 ```javascript
 build: {
     outDir: 'dist',
