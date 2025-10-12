@@ -1,3 +1,4 @@
+export {default as Auth} from '@/components/icons/MagIconAuth.vue';
 export {default as Bookmark} from '@/components/icons/MagIconBookmark.vue';
 export {default as Doctor} from '@/components/icons/MagIconDoctor.vue';
 export {default as HeartLine} from '@/components/icons/MagIconHeartLine.vue';

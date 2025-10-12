@@ -45,7 +45,7 @@
     <mag-icon name="Rollback"/>
     <mag-icon name="DoctorCap"/>
     <br/>
-    <el-button type="primary" @click="onDialogOpen" icon="el-icon-mug">打开图标选择</el-button>
+    <el-button type="primary" @click="onDialogOpen" icon="mag-icon-button">打开图标选择</el-button>
   </div>
   <mag-icon-dialog ref="iconDialogRef" :model="dialogModel" @dialog-confirm="onDialogConfirm" @dialog-cancel="onDialogCancel"/>
 </template>
