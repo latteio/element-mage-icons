@@ -43,9 +43,9 @@
     <mag-icon name="PageLast"/>
     <mag-icon name="Submit"/>
     <mag-icon name="Rollback"/>
-    <mag-icon name="DoctorCap"/><br>
-    <mag-icon name="Remove"/><br>
-    <mag-icon name="CloseOthers"/><br>
+    <mag-icon name="DoctorCap"/>
+    <mag-icon name="Remove"/>
+    <mag-icon name="CloseOthers"/>
     <mag-icon name="Close"/>
     <br/>
     <el-button type="primary" @click="onDialogOpen" icon="mag-icon-button">打开图标选择</el-button>
