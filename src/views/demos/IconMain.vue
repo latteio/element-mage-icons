@@ -48,7 +48,8 @@
     <mag-icon name="CloseOthers"/>
     <mag-icon name="Close"/>
     <br/>
-    <el-button type="primary" @click="onDialogOpen" icon="mag-icon-button">打开图标选择</el-button>
+    <el-button type="primary" @click="onDialogOpen" icon="mag-icon-save">打开图标选择</el-button>
+    <el-button type="primary" @click="onDialogOpen" icon="mag-icon-batch-save">打开图标选择</el-button>
   </div>
   <mag-icon-dialog ref="iconDialogRef" :model="dialogModel" @dialog-confirm="onDialogConfirm" @dialog-cancel="onDialogCancel"/>
 </template>
