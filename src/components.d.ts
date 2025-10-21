@@ -24,6 +24,7 @@ declare module 'vue' {
     MagIconExample: typeof import('element-mage-icons')['MagIconExample']
     MagIconExit: typeof import('element-mage-icons')['MagIconExit']
     MagIconExport: typeof import('element-mage-icons')['MagIconExport']
+    MagIconFilter: typeof import('element-mage-icons')['MagIconFilter']
     MagIconHeartLine: typeof import('element-mage-icons')['MagIconHeartLine']
     MagIconHelp: typeof import('element-mage-icons')['MagIconHelp']
     MagIconImport: typeof import('element-mage-icons')['MagIconImport']

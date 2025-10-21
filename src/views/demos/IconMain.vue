@@ -46,6 +46,7 @@
     <mag-icon name="DoctorCap"/>
     <mag-icon name="Remove"/>
     <mag-icon name="CloseOthers"/>
+    <mag-icon name="LeftRightArrows"/>
     <mag-icon name="Close"/>
     <br/>
     <el-button type="primary" @click="onDialogOpen" icon="mag-icon-save">打开图标选择</el-button>

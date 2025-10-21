@@ -53,5 +53,6 @@ export {default as BatchDelete} from '@/components/icons/MagIconBatchDelete.vue'
 export {default as Undo} from '@/components/icons/MagIconUndo.vue';
 export {default as Remove} from '@/components/icons/MagIconRemove.vue';
 export {default as BatchRemove} from '@/components/icons/MagIconBatchRemove.vue';
+export {default as Filter} from '@/components/icons/MagIconFilter.vue';
 export {default as Close} from '@/components/icons/MagIconClose.vue';
 export {default as CloseOthers} from '@/components/icons/MagIconCloseOthers.vue';
