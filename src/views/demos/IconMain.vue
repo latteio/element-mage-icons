@@ -48,7 +48,9 @@
     <mag-icon name="CloseOthers"/>
     <mag-icon name="LeftRightArrows"/>
     <mag-icon name="Close"/>
+    <mag-icon name="Plus"/>
     <br/>
+    <el-button type="primary" icon="mag-icon-plus"></el-button>
     <el-button type="primary" @click="onDialogOpen" icon="mag-icon-save">打开图标选择</el-button>
     <el-button type="primary" @click="onDialogOpen" icon="mag-icon-batch-save">打开图标选择</el-button>
   </div>
