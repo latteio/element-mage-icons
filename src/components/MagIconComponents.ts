@@ -12,6 +12,7 @@ export {default as User} from '@/components/icons/MagIconUser.vue';
 export {default as Employee} from '@/components/icons/MagIconEmployee.vue';
 export {default as SanYuan} from '@/components/icons/MagIconSanYuan.vue';
 export {default as SysLog} from '@/components/icons/MagIconSysLog.vue';
+export {default as SysManage} from '@/components/icons/MagIconSysManage.vue';
 export {default as MenuGroup} from '@/components/icons/MagIconMenuGroup.vue';
 export {default as MenuGroupPlus} from '@/components/icons/MagIconMenuGroupPlus.vue';
 export {default as Menu} from '@/components/icons/MagIconMenu.vue';
@@ -59,3 +60,5 @@ export {default as BatchRemove} from '@/components/icons/MagIconBatchRemove.vue'
 export {default as Filter} from '@/components/icons/MagIconFilter.vue';
 export {default as Close} from '@/components/icons/MagIconClose.vue';
 export {default as CloseOthers} from '@/components/icons/MagIconCloseOthers.vue';
+export {default as Share} from '@/components/icons/MagIconShare.vue';
+export {default as SharePlus} from '@/components/icons/MagIconSharePlus.vue';
