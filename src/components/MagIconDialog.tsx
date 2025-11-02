@@ -74,14 +74,14 @@ const MagIconDialog = defineComponent({
       }
     });
 
-    const camelToMinusInternal = (str: string) => {
+    const camelToMinusFunc = (str: string) => {
       return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
     }
 
     /**
      * 定义对话框初始化方法
      */
-    const onInitDialog = () => {
+    const onInitDialogFunc = () => {
       props.model.visible = props.model.visible || false;
       props.model.appendToBody = props.model.appendToBody || false;
       props.model.fullscreen = props.model.fullscreen || false;
@@ -99,7 +99,7 @@ const MagIconDialog = defineComponent({
     /**
      * 定义点击对话框确定按钮事件
      */
-    const onDialogConfirm = (event: any) => {
+    const onDialogConfirmFunc = (event: any) => {
       event && event.stopPropagation();
       emit("dialogConfirm", {icon: dialogFormModel.selectedText});
     };
@@ -107,7 +107,7 @@ const MagIconDialog = defineComponent({
     /**
      * 定义点击对话框取消按钮事件
      */
-    const onDialogCancel = (event: any) => {
+    const onDialogCancelFunc = (event: any) => {
       event && event.stopPropagation();
       emit("dialogCancel", {icon: ''});
     };
@@ -116,7 +116,7 @@ const MagIconDialog = defineComponent({
      * 定义关闭事件
      * @param retValues
      */
-    const onCloseDialog = (retValues: any) => {
+    const onCloseDialogFunc = (retValues: any) => {
       props.model.visible = false;
       props.model.header = "";
       props.model.data = {};
@@ -124,7 +124,7 @@ const MagIconDialog = defineComponent({
     };
 
     expose({
-      closeDialog: onCloseDialog
+      closeDialog: onCloseDialogFunc
     });
 
     /**
@@ -136,8 +136,8 @@ const MagIconDialog = defineComponent({
     /**
      * 选择图标
      */
-    const selectIcon = (prefix: string, icon: any) => {
-      let iconName: string = camelToMinusInternal(icon.name);
+    const onSelectIconFunc = (prefix: string, icon: any) => {
+      let iconName: string = camelToMinusFunc(icon.name);
       dialogFormModel.selectedText = prefix + iconName;
     }
 
@@ -145,7 +145,7 @@ const MagIconDialog = defineComponent({
      * 定义返回模板
      */
     return () => {
-      onInitDialog();
+      onInitDialogFunc();
       return <ElDialog
           {...props}
           {...attrs}
@@ -185,7 +185,7 @@ const MagIconDialog = defineComponent({
                         <ul>
                           {
                             defaultIcons.map(([iconName, iconComponent]) => {
-                              return <li onClick={() => selectIcon('el-icon-', iconComponent)}>
+                              return <li onClick={() => onSelectIconFunc('el-icon-', iconComponent)}>
                                 <span data-icon={iconName}></span>
                                 <ElIcon>
                                   {h(iconComponent)}
@@ -210,7 +210,7 @@ const MagIconDialog = defineComponent({
                         <ul>
                           {
                             extendsIcons.map(([iconName, iconComponent]) => {
-                              return <li onClick={() => selectIcon('', iconComponent)}>
+                              return <li onClick={() => onSelectIconFunc('', iconComponent)}>
                                 <span data-icon={iconName}></span>
                                 <ElIcon>
                                   {h(iconComponent)}
@@ -234,8 +234,8 @@ const MagIconDialog = defineComponent({
                         "is-right-alignment": props.model.footerAlign === "right",
                         "is-center-alignment": props.model.footerAlign === "center"
                       }}>
-                        {props.model.showCancelBtn && (<ElButton onClick={onDialogCancel}>取消</ElButton>)}
-                        {props.model.showConfirmBtn && (<ElButton onClick={onDialogConfirm} type="primary">确定</ElButton>)}
+                        {props.model.showCancelBtn && (<ElButton onClick={onDialogCancelFunc}>取消</ElButton>)}
+                        {props.model.showConfirmBtn && (<ElButton onClick={onDialogConfirmFunc} type="primary">确定</ElButton>)}
                       </div>
                   ) : null
             }
