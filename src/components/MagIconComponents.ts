@@ -8,6 +8,7 @@ export {default as Query} from '@/components/icons/MagIconQuery.vue';
 export {default as Org} from '@/components/icons/MagIconOrg.vue';
 export {default as Role} from '@/components/icons/MagIconRole.vue';
 export {default as RolePerms} from '@/components/icons/MagIconRolePerms.vue';
+export {default as RoleMenus} from '@/components/icons/MagIconRoleMenus.vue';
 export {default as User} from '@/components/icons/MagIconUser.vue';
 export {default as Employee} from '@/components/icons/MagIconEmployee.vue';
 export {default as SanYuan} from '@/components/icons/MagIconSanYuan.vue';
